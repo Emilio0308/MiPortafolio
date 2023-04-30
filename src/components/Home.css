@@ -19,14 +19,18 @@
     opacity: 0.9;
     text-align: center;
     font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .frente{
+    width: 2000px;
     transform: translateZ(30px);
     background: rgb(0, 0, 0);
     color: rgb(231, 231, 231);;
 }
 .atras{
-    transform: translateZ(-30px);
+    transform: translateZ(-30px) rotateX(180deg);
     background: rgb(0, 0, 0);
     color: rgb(231, 231, 231);;
 }
@@ -36,7 +40,7 @@
     
 }
 .abajo{
-    transform:translateY(30px) rotateX(90deg) ;
+    transform:translateY(30px) rotateX(270deg) ;
     background: rgb(231, 231, 231);
 }
 
@@ -64,6 +68,8 @@
     height: 60px;
     opacity: 0.9;
     z-index: 90;
+    display: flex;
+    align-items: center;
 }
 @keyframes rotate2 {
     0%{

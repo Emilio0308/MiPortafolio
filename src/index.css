@@ -24,8 +24,6 @@ html{
     transform:rotateZ(26.6deg) ;
     left: -2.95%;
   }
-
-
   .imgcontainer::after{
     right: -2.95%;
     transform: rotateZ(-26.6deg) ;
