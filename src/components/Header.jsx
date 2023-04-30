@@ -7,8 +7,8 @@ const Header = () => {
         setIsMenuActive(!isMenuActive)
     }
   return (
-    <header className='bg-black text-white w-screen fixed top-0 z-50 px-2'>
-        <nav className='grid grid-cols-2 sm:grid-cols-[auto,_1fr] max-w-[1024px] mx-auto relative w-full'>
+    <header className='bg-black text-white w-full fixed top-0 z-50 px-2'>
+        <nav className='flex sm:grid-cols-[auto,_1fr] max-w-[1024px] relative w-full'>
             <div className='w-[60px] h-[60px]'>
                 <img className='w-full h-full object-cover' src="/logo.png" alt="" />
             </div>
