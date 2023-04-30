@@ -9,9 +9,9 @@ const SkillSet = () => {
               <span className='text-cyan-500 text-3xl'>#</span>My Skills
         </h2>
 
-        <div className='w-full flex justify-around'>
+        <div className='w-full flex justify-around gap-5 flex-wrap'>
           <SkillCard type={"Soft"} skills={["Effective communication","Teamwork","Critical thinking","Adaptability"]}/>
-          <SkillCard type={"FrontEnd"} skills={["Html 5","CSS 3","JavaScript","React","Redux"]}/>
+          <SkillCard type={"FrontEnd"} skills={["Html","CSS","Javascript","React","Redux","Vite"]}/>
           <SkillCard type={"BackEnd"} skills={["Nodejs","MongoDB","Phyton","SQL"]}/>
         </div>
         <div className='w-full h-[350px] overflow-hidden relative'>

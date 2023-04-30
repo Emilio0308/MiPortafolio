@@ -10,7 +10,7 @@ import Contact from './components/Contact'
 function App() {
 
   return (
-    <main className='bg-[#282C33] text-gray-200'>
+    <main className='bg-[#282C33] text-gray-200 overflow-hidden'>
       <Header/>
       <Home/>
       <About/>
