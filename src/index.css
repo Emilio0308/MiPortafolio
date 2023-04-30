@@ -6,3 +6,27 @@ html{
     scroll-behavior: smooth;
     font-family: 'EB Garamond', serif;
 }
+.imgcontainer {
+    aspect-ratio: 1/1;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  }
+  
+  .imgcontainer::before,
+  .imgcontainer::after {
+    content: "";
+    position: absolute;
+    width: calc(25% *2.260);
+    height: 2px;
+    border-style: solid;
+    bottom: 12.5%;
+  }
+  .imgcontainer::before{
+    transform:rotateZ(26.6deg) ;
+    left: -2.95%;
+  }
+
+
+  .imgcontainer::after{
+    right: -2.95%;
+    transform: rotateZ(-26.6deg) ;
+  }

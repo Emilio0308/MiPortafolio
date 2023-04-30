@@ -3,9 +3,9 @@ import React from 'react'
 const About = () => {
   return (
     <section id='about'>
-      <section className='w-full max-w-[1024px] mx-auto grid grid-cols-[repeat(auto-fill,_minmax(250px,1fr))] auto-rows-auto gap-5 sm:grid-cols-2 px-3 pt-8'>
+      <section className='w-full max-w-[1024px] mx-auto grid grid-rows-2 gap-5 p-3 sm:grid-cols-2 sm:grid-rows-[1fr,0] sm:gap-y-0'>
 
-        <div className='flex justify-center flex-col gap-5 text-gray-200 max-w-full'>
+        <div className='flex justify-center flex-col gap-5 text-gray-200 max-w-full sm:border-b-2 border-cyan-500'>
           <h2 className= "text-2xl after:bg-cyan-500">
             <span className='text-cyan-500 text-3xl'>#</span>About-Me
           </h2>
@@ -17,8 +17,10 @@ const About = () => {
         </div>
 
 
-        <div className='max-w-full'>
-          <img className='w-full h-full object-cover' src="/imagenes/profile.png" alt="" />
+        <div className='max-w-full relative aspect-square w-full sm:self-end'>
+          <div className='w-[100%] imgcontainer absolute after:bg-cyan-500 before:bg-cyan-500 bottom-0 sm:translate-y-[25%]'>
+            <img className='w-full h-full object-cover' src="/imagenes/profile.png" alt="" /> 
+          </div>
         </div>
 
 
