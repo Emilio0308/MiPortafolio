@@ -3,7 +3,7 @@ import React from "react";
 
 const SkillCard = ( { type, skills } ) => {
   return (
-    <article className="flex flex-col gap-4 min-w-[280px] items-center p-3 rounded-xl shadow-xl shadow-gray-700 min-h-[220px]">
+    <article className="flex flex-col gap-4 items-center p-3 rounded-xl shadow-xl shadow-gray-700 min-h-[220px]">
       <h3>
         <span className="text-cyan-500 text-2xl">{`<`}</span>
         My {type} Skills
