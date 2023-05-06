@@ -3,7 +3,10 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <section id="home" className="bg-black  mt-[60px] text-white grid grid-rows-2 gap-8 relative overflow-hidden bg-[url(/imagenes/shadowbg.png)] bg-no-repeat bg-right-top min-h-[70vh] sm:grid-cols-3 sm:grid-rows-1">
+    <section
+      id="home"
+      className="bg-black  mt-[60px] text-white grid grid-rows-2 gap-8 relative overflow-hidden bg-[url(/imagenes/shadowbg.png)] bg-no-repeat bg-right-top min-h-[70vh] sm:grid-cols-3 sm:grid-rows-1"
+    >
       <div className=" h-[500px] container3d">
         <div className="column1">
           <div className="frente">
