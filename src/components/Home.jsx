@@ -54,10 +54,10 @@ const Home = () => {
         </div>
       </div>
       <article className="flex flex-col justify-center items-center w-[80%] max-w-[360px] p-5 mix-blend-difference absolute bottom-[50%] sm:bottom-0 sm:w-[50%] sm:max-w-none md:relative md:w-full md:p-0">
-        <h1 className="font-bold text-3xl pb-4 sm:text-4xl">
+        <h1 className="font-bold text-4xl pb-4 sm:text-4xl">
           <strong className="text-cyan-500">Hi</strong> I'm a frontend developer
         </h1>
-        <p className="text-xl">
+        <p className="text-xl sm:text-2xl">
           I’m probably the most passionate developer you will ever get to work
           with. If you have a great project that needs some amazing skills, I’m
           your guy.
