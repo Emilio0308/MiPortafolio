@@ -6,7 +6,7 @@ const Header = () => {
     setIsMenuActive(!isMenuActive);
   };
   return (
-    <header className="bg-gray-950  text-white w-full fixed top-0 z-50 px-2">
+    <header className="bg-gray-950 text-white w-full fixed top-0 z-50 px-2">
       <nav className="grid grid-cols-[auto,_1fr] max-w-[1024px] relative w-full mx-auto gap-6">
         <div className="w-[60px] h-[60px]">
           <img className="w-full h-full object-cover" src="/logo.png" alt="" />
@@ -21,7 +21,7 @@ const Header = () => {
             <a
               onClick={handleShowMenu}
               href="#home"
-              className="list-none text-cyan-500 hover:text-gray-900 font-bold 
+              className="list-none text-cyan-500 hover:text-gray-900 font-bold hover:tracking-widest
               hover:bg-cyan-600 w-full sm:w-[150px] h-full flex justify-center items-center"
             >
               Home
@@ -29,7 +29,7 @@ const Header = () => {
             <a
               onClick={handleShowMenu}
               href="#about"
-              className="list-none text-cyan-500 hover:text-gray-900 font-bold 
+              className="list-none text-cyan-500 hover:text-gray-900 font-bold hover:tracking-widest
               hover:bg-cyan-500 w-full sm:w-[150px] h-full flex justify-center items-center"
             >
               Aboute me
@@ -37,7 +37,7 @@ const Header = () => {
             <a
               onClick={handleShowMenu}
               href="#proyects"
-              className="list-none text-cyan-500 hover:text-gray-900 font-bold 
+              className="list-none text-cyan-500 hover:text-gray-900 font-bold hover:tracking-widest
               hover:bg-cyan-500 w-full sm:w-[150px] h-full flex justify-center items-center"
             >
               Proyects
@@ -45,21 +45,21 @@ const Header = () => {
             <a
               onClick={handleShowMenu}
               href="#contact"
-              className="list-none text-cyan-500 hover:text-gray-900 font-bold 
+              className="list-none text-cyan-500 hover:text-gray-900 font-bold hover:tracking-widest
               hover:bg-cyan-500 w-full sm:w-[150px] h-full flex justify-center items-center"
             >
               Contact
             </a>
             <button
               onClick={handleShowMenu}
-              className="absolute top-0 right-2 sm:opacity-0 sm:invisible"
+              className="absolute top-5 right-2 sm:opacity-0 sm:invisible"
             >
-              X
+              <i className='bx bx-x text-3xl text-gray-400'></i>
             </button>
           </div>
-          <button onClick={handleShowMenu} className="sm:opacity-0 sm:invisible">
-            menu
-            </button>
+          <button onClick={handleShowMenu} className="sm:opacity-0 sm:invisible text-2xl">
+            <i className='bx bx-menu'></i>
+          </button>
         </div>
         
       </nav>
