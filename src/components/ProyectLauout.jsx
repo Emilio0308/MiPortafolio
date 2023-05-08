@@ -1,23 +1,36 @@
 import React from "react";
 
-const ProyectLauout = ( { proyect } ) => {
-
+const ProyectLauout = ({ proyect, id, setProyectActive }) => {
+  const handleChangeProyect = (num) => {
+    let newValue = id + eval(num);
+    if (newValue == 0) {
+      newValue = 3
+    }
+    if (newValue == 4) {
+      newValue=1
+    }
+    setProyectActive(newValue);
+  };
   return (
-    <section className={`${proyect.title}-${proyect.id} grid grid-rows-[auto,_1fr] absolute w-full h-screen gap-[1px]`}>
+    <section
+      className={`${proyect.title}-${
+        proyect.id
+      } grid grid-rows-[auto,_1fr] absolute w-full h-screen gap-[1px] opacity-100
+      ${id == proyect.id ? "right-0  visible transition-all duration-1000 z-10" 
+      : "right-[-100%] invisible transition-all  delay-1000 duration-0 bg-gray-950"} `}
+    >
       <article className="grid w-full h-[80px] grid-cols-[2fr,_1fr] gap-[1px]">
-        <div className="bg-gray-950/20">
-            
-        </div>
+        <div className="bg-gray-950/20"></div>
         <div className="flex justify-around items-center text-3xl bg-gray-950/20">
-            <span>
+          <span>
             <i className="bx bxl-linkedin-square hover:text-cyan-500"></i>
-            </span>
-            <span>
+          </span>
+          <span>
             <i className="bx bxl-instagram hover:text-cyan-500"></i>
-            </span>
-            <span>
+          </span>
+          <span>
             <i className="bx bxl-github hover:text-cyan-500"></i>
-            </span>
+          </span>
         </div>
       </article>
       <article
@@ -32,17 +45,21 @@ const ProyectLauout = ( { proyect } ) => {
           />
         </div>
         <h3 className="sm:row-start-2  w-full h-full flex justify-center items-center bg-gray-950/20 text-2xl">
-          { proyect.title }
+          {proyect.title}
         </h3>
         <p className="p-3 w-full h-full flex justify-center items-center bg-gray-950/20">
-          { proyect.description }
+          {proyect.description}
         </p>
         <div className="w-full h-full grid grid-cols-2 text-5xl bg-gray-950/20">
-          <button className="hover:bg-[#282C33] hover:text-cyan-500">
-            <i className="bx bx-left-arrow-alt"></i>
+          <button
+            className="hover:bg-[#282C33] hover:text-cyan-500"
+          >
+            <i onClick={() => handleChangeProyect(-1)} className="bx bx-left-arrow-alt w-full h-full flex justify-center items-center"></i>
           </button>
-          <button className="hover:bg-[#282C33] hover:text-cyan-500 ">
-            <i className="bx bx-right-arrow-alt"></i>
+          <button
+            className="hover:bg-[#282C33] hover:text-cyan-500 "
+          >
+            <i onClick={() => handleChangeProyect(1)} className="bx bx-right-arrow-alt w-full h-full flex justify-center items-center"></i>
           </button>
         </div>
       </article>
