@@ -34,7 +34,7 @@ const About = () => {
           />
         </div>
         <span className="block w-[31%] h-[2px] bg-cyan-500 absolute bottom-[17.5%] right-[0] sm:bottom-[-2px] sm:top-auto"></span>
-        <div className="h-[150px] w-[30px] absolute bottom-[35%] right-[10%] flex flex-col justify-around items-center gap-3 text-4xl sm:top-auto sm:bottom-[17.5%]">
+        <div className="h-[150px] w-[30px] absolute bottom-[35%] right-[0%] flex flex-col justify-around items-center gap-3 text-4xl sm:top-auto sm:bottom-[17.5%]">
           <span className="absolute w-max text-cyan-500 top-[-50%] right-0 text-2xl">Follow Me</span>
           <span>
             <i className="bx bxl-linkedin-square hover:text-cyan-500"></i>
