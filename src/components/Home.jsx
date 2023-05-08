@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="bg-gray-950 pt-[60px] text-white grid grid-rows-2 gap-8 relative overflow-hidden bg-[url(/imagenes/shadowbg.png)] bg-no-repeat bg-right-top min-h-[100vh] sm:grid-cols-3 sm:grid-rows-1"
+      className="bg-gray-950 pt-[60px] text-white grid grid-rows-2 gap-8 relative overflow-hidden bg-[url(/imagenes/shadowbg2.png)] bg-no-repeat bg-right-top min-h-[100vh] sm:grid-cols-3 sm:grid-rows-1"
     >
       <div className=" h-[500px] container3d">
         <div className="column1">
@@ -53,7 +53,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <article className="flex flex-col justify-center w-[80%] max-w-[360px] p-5 mix-blend-difference absolute bottom-[50%] sm:bottom-0 sm:w-[50%] sm:max-w-none md:relative md:w-full md:p-0">
+      <article className="flex flex-col justify-center w-[80%] max-w-[360px] p-5 mix-blend-difference absolute bottom-[43%] sm:bottom-0 sm:w-[50%] sm:max-w-none md:relative md:w-full md:p-0">
         <h1 className="font-bold text-4xl pb-4 md:text-4xl">
           <strong className="text-cyan-500">Hi</strong> I'm a frontend developer
         </h1>
