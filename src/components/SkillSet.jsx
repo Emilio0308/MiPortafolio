@@ -3,7 +3,7 @@ import SkillCard from "./SkillCard";
 
 const SkillSet = () => {
   return (
-    <section className="w-full max-w-[1024px] mx-auto flex flex-col gap-5 p-3 mt-[80px]">
+    <section id="skills" className="w-full max-w-[1024px] mx-auto flex flex-col gap-5 p-3 mt-[80px]">
       <h2 className="text-3xl after:bg-cyan-500 font-semibold">
         <span className="text-cyan-500 text-4xl">#</span>My Skills
       </h2>

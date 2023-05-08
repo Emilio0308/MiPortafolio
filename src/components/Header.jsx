@@ -36,11 +36,19 @@ const Header = () => {
             </a>
             <a
               onClick={handleShowMenu}
+              href="#skills"
+              className="list-none text-cyan-500 hover:text-gray-900 font-bold hover:tracking-widest
+              hover:bg-cyan-500 w-full sm:w-[150px] h-full flex justify-center items-center"
+            >
+              My Skills
+            </a>
+            <a
+              onClick={handleShowMenu}
               href="#proyects"
               className="list-none text-cyan-500 hover:text-gray-900 font-bold hover:tracking-widest
               hover:bg-cyan-500 w-full sm:w-[150px] h-full flex justify-center items-center"
             >
-              Proyects
+              My Proyects
             </a>
             <a
               onClick={handleShowMenu}
