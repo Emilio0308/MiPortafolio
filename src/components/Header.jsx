@@ -9,7 +9,7 @@ const Header = () => {
     <header className="bg-gray-950 text-white w-full fixed top-0 z-50 px-2">
       <nav className="grid grid-cols-[auto,_1fr] max-w-[1200px] relative w-full mx-auto gap-6">
         <div className="w-[60px] h-[60px]">
-          <img className="w-full h-full object-cover" src="/logo.png" alt="" />
+          <img className="w-full h-full object-cover" src="/logo_1.svg" alt="" />
         </div>
         <div
           className= "w-full relative flex justify-end items-center"

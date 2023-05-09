@@ -7,6 +7,9 @@ const Contact = () => {
           <span className="text-cyan-500 text-4xl">#</span>Contact
       </h2>
       <form action="" className="w-full border-[1px] border-gray-600 rounded-2xl">
+        <div>
+          <img src="" alt="" />
+        </div>
 
       </form>
     </section>
