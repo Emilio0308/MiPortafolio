@@ -9,16 +9,16 @@ const SkillCard = ({ type, skills }) => {
         <span className="text-cyan-500 text-3xl">{`>`}</span>
       </h3>
       <div className="w-full">
-        <ul className="w-full">
+        <ul className="w-full flex flex-col gap-1">
           {skills.map((skill) => (
             <div
-              className="grid gap-2 grid-cols-[auto,auto,1fr] auto-rows-auto"
+              className="grid gap-2 grid-cols-[auto,auto,1fr] auto-rows-auto items-center"
               key={skill}
             >
               <span className="text-cyan-500">{"/* "}</span>
-              {skill}
+              <span>{skill}</span>
               <img
-                className="w-[18px] h-[80%] object-contain justify-self-end"
+                className="w-[30px] aspect-square object-contain justify-self-end"
                 src={`/skillimg/${skill}.png`}
                 onError={(e) => (e.target.style.display = "none")}
                 alt=""

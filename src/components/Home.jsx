@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="bg-gray-950 pt-[60px] text-white grid grid-rows-2 gap-8 relative overflow-hidden bg-[url(/imagenes/shadowbg2.png)] bg-no-repeat bg-right-top min-h-[100vh] sm:grid-cols-3 sm:grid-rows-1"
+      className="bg-gray-950 pt-[60px] text-white grid grid-rows-2 gap-8 relative overflow-hidden bg-[url(/imagenes/shadowbg2.png)] bg-no-repeat bg-right-top min-h-[100vh] sm:grid-cols-3 sm:grid-rows-1 bg-[length:auto_70%]"
     >
       <div className=" h-[500px] container3d">
         <div className="column1">
