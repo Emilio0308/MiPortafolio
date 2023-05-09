@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <main className="overflow-hidden bg-[#191c20] text-gray-300 
+    <main className="overflow-hidden bg-[#191c20] text-white tracking-wider
     bg-[url(/imagenes/curveline6.svg)] bg-no-repeat bg-fixed bg-[length:100%_auto] sm:bg-[url(/imagenes/curveline7.svg)]">
       <Header />
       <Home />

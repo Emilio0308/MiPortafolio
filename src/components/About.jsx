@@ -14,7 +14,7 @@ const About = () => {
           <span className="text-cyan-500 text-3xl">{`<`}</span> Hello i'm Emilio
           Rivas <span className="text-cyan-500 text-3xl">{`>`}</span>
         </h4>
-        <p className="overflow-hidden self-start text-xl">
+        <p className="overflow-hidden self-start text-xl bg-[#191c20]/80">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vitae
           architecto harum facilis numquam iusto, deserunt repudiandae labore
           velit, incidunt asperiores veniam maxime natus? Consequuntur quia ab
