@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="w-full max-w-[1200px] p-3 m-auto  grid grid-rows-[auto,_1fr] gap-5 pt-[60px"
+      className="w-full max-w-[1200px] p-3 m-auto  grid grid-rows-[auto,_1fr] gap-5 pt-[60px]"
     >
       <h2 className="text-3xl after:bg-cyan-500 font-semibold">
         <span className="text-cyan-500 text-4xl">#</span>Contact
@@ -15,25 +15,25 @@ const Contact = () => {
         backdrop-blur-sm">
           <input
             placeholder="ingresa tu nombre"
-            className="h-[48px] rounded-md outline-none bg-[#23252f]/90 p-3"
+            className="h-[48px] rounded-md outline-none bg-[#23252f] p-3"
             type="text"
             id="name"
           />
           <input
             placeholder="ingresa tu email"
-            className="h-[48px] rounded-md outline-none bg-[#23252f]/90 p-3"
+            className="h-[48px] rounded-md outline-none bg-[#23252f] p-3"
             type="email"
             id="email"
           />
           <input
             placeholder="subject"
-            className="h-[48px] rounded-md outline-none bg-[#23252f]/90 p-3"
+            className="h-[48px] rounded-md outline-none bg-[#23252f] p-3"
             type="text"
             id="subjet"
           />
           <textarea
               placeholder="Message"
-              className="rounded-md h-[200px]  outline-none bg-[#23252f]/90 resize-none p-3 md:h-[300px]"
+              className="rounded-md h-[200px]  outline-none bg-[#23252f] resize-none p-3 md:h-[300px]"
               type="text"
               id="message"
             />
