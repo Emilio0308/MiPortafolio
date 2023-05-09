@@ -16,7 +16,7 @@ const Header = () => {
         >
           <div className={
             `${isMenuActive ? "right-[0%]" : " right-[-220px]"}
-            absolute bg-gray-950 top-0 w-[220px] h-[70vh] flex flex-col justify-end sm:flex-row sm:h-full sm:right-0 sm:opacity-100 sm:w-full sm:translate-x-0 text-xl transition-[right] duration-700 translate-x-2`
+            absolute bg-gray-950 top-0 w-[220px] h-[70vh] flex flex-col justify-end sm:flex-row sm:h-full sm:right-0 sm:opacity-100 sm:w-full sm:translate-x-0 text-sm transition-[right] duration-700 translate-x-2`
             }>
             <a
               onClick={handleShowMenu}

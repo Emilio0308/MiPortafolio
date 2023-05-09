@@ -6,9 +6,12 @@ import Proyects from "./components/Proyects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
+// bg-[#282C33]
+
 function App() {
   return (
-    <main className="bg-[#282C33] text-gray-200 overflow-hidden">
+    <main className="overflow-hidden bg-gray-950 text-gray-300 
+    bg-[url(/imagenes/curveline6.svg)] bg-no-repeat bg-fixed bg-[length:100%_auto] sm:bg-[url(/imagenes/curveline7.svg)]">
       <Header />
       <Home />
       <About />

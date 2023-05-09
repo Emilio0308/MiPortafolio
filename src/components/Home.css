@@ -16,7 +16,7 @@
     position: absolute;
     width: 2000px;
     height: 60px;
-    opacity: 0.9;
+    /* opacity: 0.9; */
     text-align: center;
     font-size: 2rem;
     display: flex;
@@ -26,18 +26,17 @@
 .frente{
     width: 2000px;
     transform: translateZ(30px);
-    background: rgb(0, 0, 0);
+    background: linear-gradient(45deg ,rgb(41, 41, 41) ,1% , black);
     color: rgb(231, 231, 231);;
 }
 .atras{
     transform: translateZ(-30px) rotateX(180deg);
-    background: rgb(0, 0, 0);
+    background: linear-gradient(45deg,rgb(41, 41, 41), 1% , black);
     color: rgb(231, 231, 231);;
 }
 .arriba{
     transform:translateY(-30px) rotateX(90deg) ;
-    background: rgb(231, 231, 231);
-    
+    background: rgb(231, 231, 231);    
 }
 .abajo{
     transform:translateY(30px) rotateX(270deg) ;
@@ -66,7 +65,7 @@
     position: absolute;
     width: 2500px;
     height: 60px;
-    opacity: 0.9;
+    /* opacity: 0.9; */
     z-index: 90;
     display: flex;
     align-items: center;

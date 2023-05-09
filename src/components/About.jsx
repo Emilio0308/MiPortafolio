@@ -6,7 +6,7 @@ const About = () => {
       id="about"
       className="p-3 pt-[60px] max-w-[1200px] grid grid-rows-[auto,1fr] gap-5 sm:grid-cols-2 sm:grid-rows-[1fr,0] sm:gap-y-0 sm:h-auto mx-auto"
     >
-      <div className="grid grid-rows-[repeat(3,_auto)] min-h-[450px] text-gray-200 sm:border-b-2 border-cyan-500 items-center">
+      <div className="grid grid-rows-[repeat(3,_auto)] min-h-[450px] sm:border-b-4 border-cyan-500 items-center">
         <h2 className="text-3xl after:bg-cyan-500 font-semibold">
           <span className="text-cyan-500 text-4xl">#</span>About-Me
         </h2>
@@ -33,7 +33,7 @@ const About = () => {
             alt=""
           />
         </div>
-        <span className="block w-[31%] h-[2px] bg-cyan-500 absolute bottom-[17.5%] right-[0] sm:bottom-[-2px] sm:top-auto"></span>
+        <span className="block w-[31%] h-[4px] bg-cyan-500 absolute bottom-[17.5%] right-[0] sm:bottom-[-2px] sm:top-auto"></span>
         <div className="h-[150px] w-[30px] absolute bottom-[35%] right-[0%] flex flex-col justify-around items-center gap-3 text-4xl sm:top-auto sm:bottom-[17.5%]">
           <span className="absolute w-max text-cyan-500 top-[-50%] right-0 text-2xl">Follow Me</span>
           <span>
