@@ -4,7 +4,7 @@ import SkillCard from "./SkillCard";
 const SkillSet = () => {
   return (
     <section id="skills" className="w-full max-w-[1200px] mx-auto flex flex-col gap-8 p-3 pt-[90px]">
-      <h2 className="text-3xl after:bg-cyan-500 font-semibold">
+      <h2 className="text-3xl after:bg-cyan-500 font-semibold tracking-[8px]">
         <span className="text-cyan-500 text-4xl">#</span>My Skills
       </h2>
 

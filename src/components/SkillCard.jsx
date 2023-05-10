@@ -1,6 +1,7 @@
 import React from "react";
 
 const SkillCard = ({ type, skills }) => {
+  // bg-[#e32053]
   return (
     <article className="grid grid-rows-[auto,_1fr] gap-14 p-4 rounded-xl bg-[#23252f] min-h-[340px]">
       <h3 className="text-2xl place-self-center">

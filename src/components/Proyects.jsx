@@ -30,7 +30,7 @@ const Proyects = () => {
       id="proyects"
       className="w-full max-w-[1200px] p-3 mx-auto gap-5 grid grid-rows-[auto,_1fr] pt-[60px]"
     >
-      <h2 className="text-3xl after:bg-cyan-500 font-semibold">
+      <h2 className="text-3xl after:bg-cyan-500 font-semibold tracking-[8px]">
         <span className="text-cyan-500 text-4xl">#</span>My Proyects
       </h2>
       <section className="h-full flex flex-col min-h-screen relative">

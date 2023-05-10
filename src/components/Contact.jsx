@@ -6,7 +6,7 @@ const Contact = () => {
       id="contact"
       className="w-full max-w-[1200px] p-3 m-auto  grid grid-rows-[auto,_1fr] gap-5 pt-[60px]"
     >
-      <h2 className="text-3xl after:bg-cyan-500 font-semibold">
+      <h2 className="text-3xl after:bg-cyan-500 font-semibold tracking-[8px]">
         <span className="text-cyan-500 text-4xl">#</span>Contact
       </h2>
       <section className="grid grid-rows-[auto] auto-rows-auto gap-3 sm:grid-rows-1 sm:grid-cols-2 bg-[url(/contact/triangulo.svg)] bg-no-repeat 
