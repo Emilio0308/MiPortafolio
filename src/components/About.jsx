@@ -2,7 +2,7 @@ import React from "react";
 // #282C33
 const About = () => {
   return (
-    <section className="w-full bg-[url(/imagenes/about2.svg)] bg-no-repeat bg-center bg-[length:100%_100%] sm:bg-[url(/imagenes/aboutsm.svg)]">
+    <section className="w-full bg-[url(/imagenes/about2.svg)] bg-no-repeat bg-[length:100%_90%] sm:bg-[url(/imagenes/aboutsm.svg)]">
       <section
         id="about"
         className="p-3 pt-[20px] max-w-[1200px] grid grid-rows-[auto,1fr] gap-5 sm:grid-cols-2 sm:grid-rows-[1fr,0] sm:gap-y-0 sm:h-auto mx-auto"
