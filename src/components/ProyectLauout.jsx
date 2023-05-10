@@ -1,23 +1,35 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const ProyectLauout = ({ proyect, id, setProyectActive }) => {
+  const language = useSelector((store => store.language))
+  console.log(language)
+
   const handleChangeProyect = (num) => {
     let newValue = id + eval(num);
     if (newValue == 0) {
-      newValue = 3
+      newValue = 4
     }
-    if (newValue == 4) {
+    if (newValue == 5) {
       newValue=1
     }
     setProyectActive(newValue);
   };
+
+  const proyectPosition = () => {
+    if (id > proyect.id) {
+      return "right-[100%]"
+    }if (id < proyect.id) {
+      return "right-[-100%]"
+    }
+  } 
   return (
     <section
       className={`${proyect.title}-${
         proyect.id
       } grid grid-rows-[auto,_1fr] absolute w-full h-screen gap-[2px] opacity-100
-      ${id == proyect.id ? "right-0  visible transition-all duration-1000 z-10" 
-      : "right-[-100%] invisible transition-all  delay-1000 duration-0"} `}
+      ${id == proyect.id ? "right-0 visible transition-all duration-1000 z-10" 
+      : "invisible transition-all delay-1000 duration-0"} ${proyectPosition()}`}
     >
       <article className="grid w-full h-[80px] grid-cols-[2fr,_1fr] gap-[2px]">
         <div className="bg-[#23252f]"></div>
@@ -37,18 +49,20 @@ const ProyectLauout = ({ proyect, id, setProyectActive }) => {
         className="w-full grid grid-rows-[3fr,_repeat(3,_1fr)] items-center justify-items-center gap-[2px]
        sm:grid-rows-[2fr,_1fr] sm:grid-cols-[2fr,_1fr]"
       >
-        <div className="w-full h-full bg-[#23252f]  flex justify-center items-center">
+        <a href={proyect.link} target="_blank" className="w-full h-full bg-[#23252f]  flex justify-center items-center cursor-pointer">
           <img
             className="object-contain max-h-[calc((100vh-80px)*0.5)] sm:max-h-[calc((100vh-80px)*2/3)]"
             src={proyect.img}
             alt=""
           />
-        </div>
-        <h3 className="sm:row-start-2  w-full h-full flex justify-center items-center bg-[#23252f] text-2xl">
+        </a>
+        <h3 className="sm:row-start-2  w-full h-full flex justify-center items-center bg-[#23252f] text-2xl tracking-widest uppercase">
           {proyect.title}
         </h3>
         <p className="p-3 w-full h-full flex justify-center items-center bg-[#23252f]">
-          {proyect.description}
+          {
+            language ? proyect.ingles : proyect.español
+          }
         </p>
         <div className="w-full h-full grid grid-cols-2 text-5xl bg-[#23252f]">
           <button

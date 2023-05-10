@@ -1,6 +1,8 @@
 import React from "react";
+import { useSelector } from "react-redux";
 // #282C33
 const About = () => {
+  const language = useSelector((store) => store.language);
   return (
     <section className="w-full bg-[url(/imagenes/about2.svg)] bg-no-repeat bg-[length:100%_90%] sm:bg-[url(/imagenes/aboutsm.svg)]">
       <section
@@ -12,14 +14,16 @@ const About = () => {
             <span className="text-cyan-500 text-4xl">#</span>About-Me
           </h2>
           <h4 className="text-2xl">
-            <span className="text-cyan-500 text-3xl">{`<`}</span> Hello i'm
-            Emilio Rivas <span className="text-cyan-500 text-3xl">{`>`}</span>
+            <span className="text-cyan-500 text-3xl">{`<`}</span>
+            <span>{language ? "Hello i'm Emilio Rivas" : "Hola, Soy Emilio Rivas"}</span>
+            <span className="text-cyan-500 text-3xl">{`>`}</span>
           </h4>
-          <p className="overflow-hidden self-start text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vitae
-            architecto harum facilis numquam iusto, deserunt repudiandae labore
-            velit, incidunt asperiores veniam maxime natus? Consequuntur quia ab
-            minima nesciunt sapiente.
+          <p className="overflow-hidden self-start text-lg text-justify">
+          {
+            language ?
+            "Passionate about technology and programming, I consider myself a curious and self-taught person. I recently graduated as a frontend developer from Academlo's bootcamp and I'm currently seeking my first job in the development area. I enjoy working in teams and effectively communicating ideas, which has been essential for successfully carrying out projects. As a developer, my focus is on creating practical and efficient solutions that meet user needs. I'm excited about the opportunity to join a software development team and continue learning and growing in this exciting field. If you're interested in learning more about me, please don't hesitate to get in touch. I'm eager to contribute to a team and help take their projects to the next level. Thank you for considering me!" 
+            : "Soy un desarrollador frontend apasionado por la tecnología y la programación. Me gradué recientemente del bootcamp de Academlo y busco mi primer empleo en el área de desarrollo. Me gusta trabajar en equipo y comunicar ideas de manera efectiva, lo cual ha sido esencial para llevar a cabo proyectos con éxito. Como desarrollador, busco enfocarme en crear soluciones prácticas y eficientes que satisfagan las necesidades del usuario. Estoy emocionado por la oportunidad de unirme a un equipo de desarrollo de software y seguir aprendiendo y creciendo en este emocionante campo. Si estás interesado en conocer más sobre mí, no dudes en ponerte en contacto conmigo. ¡Gracias por su consideración!"
+          }
           </p>
         </div>
 

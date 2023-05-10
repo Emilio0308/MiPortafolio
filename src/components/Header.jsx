@@ -1,13 +1,20 @@
 import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { changeLanguage } from "../store/slices/language.sile";
 
 const Header = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
+  const language = useSelector( (store)=> store.language)
   const handleShowMenu = () => {
     setIsMenuActive(!isMenuActive);
   };
+  const dispatch = useDispatch()
+  const handleChangeLenguage = ()=> {
+    dispatch(changeLanguage())
+  }
   return (
     <header className="bg-gray-950 text-white w-full fixed top-0 z-50 px-2">
-      <nav className="grid grid-cols-[auto,_1fr] max-w-[1200px] relative w-full mx-auto gap-6">
+      <nav className="grid grid-cols-[auto,_1fr,_auto] max-w-[1200px] relative w-full mx-auto gap-6">
         <div className="w-[60px] h-[60px]">
           <img className="w-full h-full object-cover" src="/logo_1.svg" alt="" />
         </div>
@@ -15,8 +22,8 @@ const Header = () => {
           className= "w-full relative flex justify-end items-center"
         >
           <div className={
-            `${isMenuActive ? "right-[0%]" : " right-[-220px]"}
-            absolute bg-gray-950 top-0 w-[220px] h-[70vh] flex flex-col justify-end sm:flex-row sm:h-full sm:right-0 sm:opacity-100 sm:w-full sm:translate-x-0 text-sm transition-[right] duration-700 translate-x-2`
+            `${isMenuActive ? "right-[0%]" : " right-[-80vw]"}
+            absolute bg-gray-950 top-0 w-[80vw] h-[100vh] flex flex-col justify-end sm:flex-row sm:h-full sm:right-0 sm:opacity-100 sm:w-full sm:translate-x-0 text-lg transition-[right] duration-700 translate-x-2`
             }>
             <a
               onClick={handleShowMenu}
@@ -69,7 +76,11 @@ const Header = () => {
             <i className='bx bx-menu'></i>
           </button>
         </div>
-        
+        <button onClick={handleChangeLenguage} className="text-sm text-cyan-500">
+            <span className={`${language? "text-cyan-500" : "text-white text-xs"}`}>En</span>
+            /
+            <span className={`${language? "text-white text-xs" : "text-cyan-500"}`}>Es</span>
+        </button>
       </nav>
     </header>
   );

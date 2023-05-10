@@ -1,7 +1,9 @@
 import React from "react";
 import "./Home.css";
+import { useSelector } from "react-redux";
 
 const Home = () => {
+  const language = useSelector( (store) => store.language)
   return (
     <section
       id="home"
@@ -55,12 +57,19 @@ const Home = () => {
       </div>
       <article className="flex flex-col justify-center w-[80%] max-w-[360px] p-5 mix-blend-difference absolute bottom-[43%] sm:bottom-0 sm:w-[50%] sm:max-w-none md:relative md:w-full md:p-0">
         <h1 className="font-bold text-4xl pb-4 md:text-4xl">
-          <strong className="text-cyan-500">Hi</strong> I'm a frontend developer
+          <strong className="text-cyan-500">
+            {
+              language ? "Hi ":"Hola "
+            }
+          </strong>
+            {
+              language ? "I'm a frontend developer":"soy un desarrollador frontend."
+            }
         </h1>
         <p className="text-xl md:text-2xl">
-          I’m probably the most passionate developer you will ever get to work
-          with. If you have a great project that needs some amazing skills, I’m
-          your guy.
+          { language ?
+          "I’m probably the most passionate developer you will ever get to work with. If you have a great project that needs some amazing skills, I'm what you're looking for.":"Probablemente sea el desarrollador más apasionado con el que trabajarás. Si tienes un gran proyecto que requiere habilidades increíbles, soy lo que estás buscando."
+        }
         </p>
       </article>
       <div className="flex justify-center w-full py-3 items-center relative sm:col-span-2 md:col-span-1  max-w-[700px] mx-auto">

@@ -9,20 +9,34 @@ const Proyects = () => {
     pokedex : {
       title: "Pokedex",
       id:1,
-      description: "Este es un proyecto con el consumo dela api pokemon",
-      img: "/proyectsimg/pokedex.png"
+      español: "Hola entrenador, bienvenido a la Pokédex donde encontrarás todos los pokémon que buscas en una interfaz interactiva pensada para ti.",
+      ingles: "Hi trainer, welcome to the Pokédex where you will find all the Pokémon you are looking for in an interactive interface designed for you.",
+      img: "/proyectsimg/pokedex.png",
+      link: "https://erivaspokedex.netlify.app/"
     },
     rickymorty : {
       title: "Rick y Morty",
       id:2,
-      description: "Este es un proyecto con el consumo dela api de Rick y Morty",
-      img: "/proyectsimg/rickymorty.png"
+      español: "Sitio web en React usando la popular API de Rick and Morty. Ven y encuentra a tu personaje favorito en las dimensiones locas de Rick y Morty.",
+      ingles: "Website in React using the popular Rick and Morty API. Come and find your favorite character in Rick and Morty's crazy dimensions.",
+      img: "/proyectsimg/rickymorty.png",
+      link:"https://projectrick.netlify.app/",
     },
     ecommers : {
-      title: "Ecommers",
+      title: "E-commers",
       id:3,
-      description: "Este es el proyecto del Ecomers",
-      img: "/proyectsimg/ecommers.png"
+      español: "Este es el e-commers de Academlo, no te quedes sin tu prenda favorita.",
+      ingles: "This is Academlo's e-commerce, don't miss out on your favorite garment.",
+      img: "/proyectsimg/ecommers.png",
+      link: "https://emili0ecommerce.netlify.app/",
+    },
+    portfolio : {
+      title: "Portfolio",
+      id:4,
+      español: "Este es mi propio sitio web ;)",
+      ingles: "This is my personal website.",
+      img: "/proyectsimg/portfolio.png",
+      link: "https://erivas.netlify.app/",
     },
   }
   return (
@@ -39,6 +53,10 @@ const Proyects = () => {
         <ProyectLauout proyect={proyects.rickymorty} id={proyectActive} setProyectActive={setProyectActive} />
 
         <ProyectLauout proyect={proyects.ecommers} id={proyectActive} setProyectActive={setProyectActive} />
+
+        <ProyectLauout proyect={proyects.portfolio} id={proyectActive} setProyectActive={setProyectActive} />
+
+
       </section>
     </section>
   );

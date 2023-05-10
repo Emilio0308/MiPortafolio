@@ -1,6 +1,8 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const Contact = () => {
+  const language = useSelector( (store) => store.language )
   return (
     <section
       id="contact"
@@ -14,13 +16,13 @@ const Contact = () => {
         <form className="max-w-[550px] border-[1px] border-gray-600 rounded-2xl grid grid-rows-[repeat(3,_auto),_2fr,auto] p-3 gap-6
         backdrop-blur-sm">
           <input
-            placeholder="ingresa tu nombre"
+            placeholder="Your name"
             className="h-[48px] rounded-md outline-none bg-[#23252f] p-3"
             type="text"
             id="name"
           />
           <input
-            placeholder="ingresa tu email"
+            placeholder="Your email"
             className="h-[48px] rounded-md outline-none bg-[#23252f] p-3"
             type="email"
             id="email"
@@ -42,7 +44,13 @@ const Contact = () => {
           </button>
         </form>
         <article className="grid grid-rows-[auto,_60%] h-full gap-3 p-3">
-          <p className="self-end">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa numquam reprehenderit ab quisquam? Sit tempore odio animi quidem corporis distinctio, earum unde eum possimus magni reiciendis sequi, quaerat ex nostrum?</p>
+          <div className="self-end max-w-[300px] w-full mx-auto">
+            {
+              language?
+               "Do you have any questions or want to know more about my work? Contact me and let's chat!"
+              :"¿Tienes alguna pregunta o quieres saber más sobre mi trabajo?¡Contáctame y hablemos!"
+            }
+          </div>
           <div className="h-full w-full max-h-[300px]">
             <img className="m-auto h-full w-full object-contain" src="/contact/mobile.svg" alt="" />
           </div>
