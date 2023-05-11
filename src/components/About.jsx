@@ -18,18 +18,19 @@ const About = () => {
             <span>{language ? "Hello i'm Emilio Rivas" : "Hola, Soy Emilio Rivas"}</span>
             <span className="text-cyan-500 text-3xl">{`>`}</span>
           </h4>
-          <p className="overflow-hidden self-start text-lg text-justify">
+          <p className="overflow-hidden self-start text-lg">
           {
             language ?
-            "Passionate about technology and programming, I consider myself a curious and self-taught person. I recently graduated as a frontend developer from Academlo's bootcamp and I'm currently seeking my first job in the development area. I enjoy working in teams and effectively communicating ideas, which has been essential for successfully carrying out projects. As a developer, my focus is on creating practical and efficient solutions that meet user needs. I'm excited about the opportunity to join a software development team and continue learning and growing in this exciting field. If you're interested in learning more about me, please don't hesitate to get in touch. I'm eager to contribute to a team and help take their projects to the next level. Thank you for considering me!" 
-            : "Soy un desarrollador frontend apasionado por la tecnología y la programación. Me gradué recientemente del bootcamp de Academlo y busco mi primer empleo en el área de desarrollo. Me gusta trabajar en equipo y comunicar ideas de manera efectiva, lo cual ha sido esencial para llevar a cabo proyectos con éxito. Como desarrollador, busco enfocarme en crear soluciones prácticas y eficientes que satisfagan las necesidades del usuario. Estoy emocionado por la oportunidad de unirme a un equipo de desarrollo de software y seguir aprendiendo y creciendo en este emocionante campo. Si estás interesado en conocer más sobre mí, no dudes en ponerte en contacto conmigo. ¡Gracias por su consideración!"
+            "I am a passionate frontend developer with a love for technology and programming. I enjoy working collaboratively and effectively communicating ideas. I recently graduated from the Academlo bootcamp and am seeking my first employment opportunity in the development field. I am excited for the opportunity to join a software development team and continue learning and growing in this exciting field. Please don't hesitate to contact me. Thank you for your consideration!"
+
+            : "Soy un desarrollador frontend apasionado por la tecnología y la programación, Me gusta trabajar en equipo y comunicar ideas de manera efectiva, me gradué recientemente del bootcamp de Academlo y busco mi primer empleo en el área de desarrollo. Estoy emocionado por la oportunidad de unirme a un equipo de desarrollo de software y seguir aprendiendo y creciendo en este emocionante campo. No dudes en ponerte en contacto conmigo. ¡Gracias por su consideración!"
           }
           </p>
         </div>
 
         <div className="relative w-full aspect-square self-end grid">
           <div
-            className="w-[70%] aspect-square imgcontainer absolute after:bg-cyan-500 before:bg-cyan-500
+            className="w-[85%] aspect-square imgcontainer absolute after:bg-cyan-500 before:bg-cyan-500
           sm:translate-y-[25.8%] bottom-0 z-20"
           >
             <img
@@ -38,8 +39,8 @@ const About = () => {
               alt=""
             />
           </div>
-          <span className="block w-[31%] h-[4px] bg-cyan-500 absolute bottom-[17.5%] right-[0] sm:bottom-[-2px] sm:top-auto"></span>
-          <div className="h-[150px] w-[30px] absolute bottom-[35%] right-[0%] flex flex-col justify-around items-center gap-3 text-4xl sm:top-auto sm:bottom-[17.5%]">
+          <span className="block w-[31%] h-[4px] bg-cyan-500 absolute bottom-[21.25%] right-[0] sm:bottom-[-2px] sm:top-auto"></span>
+          <div className="h-[150px] w-[30px] absolute bottom-[35%] right-[0%] flex flex-col justify-around items-center gap-3 text-4xl sm:top-auto sm:bottom-[35%]">
             <span className="absolute w-max text-cyan-500 top-[-50%] right-0 text-2xl font-bold">
               Follow Me
             </span>

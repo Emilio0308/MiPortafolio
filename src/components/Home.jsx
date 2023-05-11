@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="bg-gray-950 pt-[60px] text-white grid grid-rows-2 gap-8 relative overflow-hidden bg-[url(/imagenes/shadowbg2.png)] bg-no-repeat bg-right-top min-h-[100vh] sm:grid-cols-3 sm:grid-rows-1 bg-[length:auto_70%]"
+      className="bg-gray-950 pt-[60px] text-white grid grid-rows-2 gap-8 relative overflow-hidden bg-[url(/imagenes/shadowbg2.png)] bg-no-repeat bg-right-top min-h-[100vh] max-h-[850px] sm:grid-cols-3 sm:grid-rows-1 bg-[length:auto_70%]"
     >
       <div className=" h-[500px] container3d">
         <div className="column1">
@@ -55,8 +55,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <article className="flex flex-col justify-center w-[80%] max-w-[360px] p-5 mix-blend-difference absolute bottom-[43%] sm:bottom-0 sm:w-[50%] sm:max-w-none md:relative md:w-full md:p-0">
-        <h1 className="font-bold text-4xl pb-4 md:text-4xl">
+      <article className="flex flex-col justify-center w-[80%] max-w-[360px] p-5 mix-blend-difference absolute bottom-[43%] sm:bottom-0 sm:w-[50%] sm:max-w-none md:relative md:p-0 md:w-[100%]">
+        <h1 className="font-bold text-4xl md:text-4xl pb-4">
           <strong className="text-cyan-500">
             {
               language ? "Hi ":"Hola "
@@ -66,9 +66,10 @@ const Home = () => {
               language ? "I'm a frontend developer":"soy un desarrollador frontend."
             }
         </h1>
-        <p className="text-xl md:text-2xl">
+        <p className="text-xl">
           { language ?
-          "I’m probably the most passionate developer you will ever get to work with. If you have a great project that needs some amazing skills, I'm what you're looking for.":"Probablemente sea el desarrollador más apasionado con el que trabajarás. Si tienes un gran proyecto que requiere habilidades increíbles, soy lo que estás buscando."
+          "I’m probably the most passionate developer you will ever get to work with. If you have a great project that needs some amazing skills, I'm what you're looking for."
+          :"Probablemente sea el desarrollador más apasionado con el que trabajarás. Si tienes un gran proyecto que requiere habilidades increíbles, soy lo que estás buscando."
         }
         </p>
       </article>

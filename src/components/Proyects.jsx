@@ -9,16 +9,16 @@ const Proyects = () => {
     pokedex : {
       title: "Pokedex",
       id:1,
-      español: "Hola entrenador, bienvenido a la Pokédex donde encontrarás todos los pokémon que buscas en una interfaz interactiva pensada para ti.",
-      ingles: "Hi trainer, welcome to the Pokédex where you will find all the Pokémon you are looking for in an interactive interface designed for you.",
-      img: "/proyectsimg/pokedex.png",
+      español: "Bienvenido a la Pokédex donde encontrarás todos los pokémon que buscas en una interfaz interactiva pensada para ti.",
+      ingles: "Welcome to the Pokédex where you will find all the Pokémon you are looking for in an interactive interface designed for you.",
+      img: "/proyectsimg/pokedexsm.png",
       link: "https://erivaspokedex.netlify.app/"
     },
     rickymorty : {
       title: "Rick y Morty",
       id:2,
-      español: "Sitio web en React usando la popular API de Rick and Morty. Ven y encuentra a tu personaje favorito en las dimensiones locas de Rick y Morty.",
-      ingles: "Website in React using the popular Rick and Morty API. Come and find your favorite character in Rick and Morty's crazy dimensions.",
+      español: "Sitio web en React usando la popular API de Rick and Morty. Encuentra a tu personaje favorito en las dimensiones locas de Rick y Morty.",
+      ingles: "Website in React using the popular Rick and Morty API.Find your favorite character in Rick and Morty's crazy dimensions.",
       img: "/proyectsimg/rickymorty.png",
       link:"https://projectrick.netlify.app/",
     },

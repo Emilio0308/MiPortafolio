@@ -47,10 +47,10 @@ const ProyectLauout = ({ proyect, id, setProyectActive }) => {
       </article>
       <article
         className="w-full grid grid-rows-[3fr,_repeat(3,_1fr)] items-center justify-items-center gap-[2px]
-       sm:grid-rows-[2fr,_1fr] sm:grid-cols-[2fr,_1fr]"
+       sm:grid-rows-[2fr,_1fr] sm:grid-cols-[2fr,_1fr] text-base max-h-[calc(100vh-80px)]"
       >
         <a href={proyect.link} target="_blank" className="w-full h-full bg-[#23252f]  flex justify-center items-center cursor-pointer">
-          <img
+         <img
             className="object-contain max-h-[calc((100vh-80px)*0.5)] sm:max-h-[calc((100vh-80px)*2/3)]"
             src={proyect.img}
             alt=""
@@ -59,7 +59,7 @@ const ProyectLauout = ({ proyect, id, setProyectActive }) => {
         <h3 className="sm:row-start-2  w-full h-full flex justify-center items-center bg-[#23252f] text-2xl tracking-widest uppercase">
           {proyect.title}
         </h3>
-        <p className="p-3 w-full h-full flex justify-center items-center bg-[#23252f]">
+        <p className="p-1 w-full h-full flex justify-center items-center bg-[#23252f] sm:p-3">
           {
             language ? proyect.ingles : proyect.español
           }
