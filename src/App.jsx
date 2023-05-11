@@ -7,11 +7,11 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 // bg-[#282C33]
-// bg-[url(/imagenes/curveline6.svg)] bg-no-repeat bg-fixed bg-[length:100%_auto] sm:bg-[url(/imagenes/curveline7.svg)]
+// bg-[#191c20]
 
 function App() {
   return (
-    <main className="overflow-hidden bg-[#191c20] text-white tracking-wider
+    <main className="overflow-hidden bg-[url(/imagenes/bgnoise.png)] text-white tracking-wider
     ">
       <Header />
       <Home />
