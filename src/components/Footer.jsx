@@ -5,8 +5,8 @@ const Footer = () => {
     <footer className="bg-[#282C33] w-full mt-[80px] min-h-[280px] py-[60px] grid content-center">
       <section className="w-full mas-w-[1200px] grid grid-rows-3 gap-6 justify-center items-center sm:grid-rows-1 sm:grid-cols-3">
         <div className="w-[200px] m-auto">
-          <h3 className="text-center text-4xl tracking-[10px] uppercase text-gray-300 font-Playfair">Emilio.R</h3>
           <img className="w-full aspect-square" src="/logo.png" alt="" />
+          <h3 className="text-center text-4xl tracking-[10px] uppercase text-gray-300 font-Playfair">Emilio.R</h3>
         </div>
         <article className="grid tracking-wider gap-3 w-[250px] mx-auto">
           <a
