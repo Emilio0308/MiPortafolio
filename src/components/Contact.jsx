@@ -26,7 +26,7 @@ const Contact = () => {
       </h2>
       <section className="grid grid-rows-[auto] auto-rows-auto gap-3 sm:grid-rows-1 sm:grid-cols-2 bg-[url(/contact/triangulo.svg)] bg-no-repeat 
       bg-[length:auto_70%] sm:bg-center sm:bg-[length:auto_90%]">
-        <form onSubmit={handleSubmit} className="max-w-[550px] border-[1px] border-gray-600 rounded-2xl grid grid-rows-[repeat(2,_auto),_2fr,auto] p-3 gap-6
+        <form onSubmit={handleSubmit} className="max-w-[550px] border-[1px] border-gray-800 rounded-2xl grid grid-rows-[repeat(2,_auto),_2fr,auto] p-3 gap-6
         backdrop-blur-sm">
           <input
             placeholder="Your name"
@@ -62,7 +62,7 @@ const Contact = () => {
           </button>
         </form>
         <article className="grid grid-rows-[auto,_60%] h-full gap-3 p-3">
-          <div className="self-end max-w-[300px] w-full mx-auto">
+          <div className="self-center max-w-[300px] w-full mx-auto">
             {
               language?
                "Do you have any questions or want to know more about my work? Contact me and let's chat!"

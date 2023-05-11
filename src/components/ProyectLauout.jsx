@@ -27,7 +27,7 @@ const ProyectLauout = ({ proyect, id, setProyectActive }) => {
     <section
       className={`${proyect.title}-${
         proyect.id
-      } grid grid-rows-[auto,_1fr] absolute w-full h-screen gap-[2px] opacity-100
+      } grid grid-rows-[auto,_1fr] absolute w-full h-screen gap-[2px] opacity-100 shadow-2xl shadow-black/10
       ${
         id == proyect.id
           ? "right-0 visible transition-all duration-1000 z-10"
