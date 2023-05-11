@@ -7,7 +7,7 @@ const About = () => {
     <section className="w-full bg-[url(/imagenes/about2.svg)] bg-no-repeat bg-[length:100%_90%] sm:bg-[url(/imagenes/aboutsm.svg)]">
       <section
         id="about"
-        className="p-3 pt-[20px] max-w-[1200px] grid grid-rows-[auto,1fr] gap-5 sm:grid-cols-2 sm:grid-rows-[1fr,0] sm:gap-y-0 sm:h-auto mx-auto"
+        className="p-3 max-w-[1200px] grid grid-rows-[auto,1fr] gap-5 sm:grid-cols-2 sm:grid-rows-[1fr,0] sm:gap-y-0 sm:h-auto mx-auto pt-[60px]"
       >
         <div className="grid grid-rows-[repeat(3,_auto)] min-h-[450px] sm:border-b-4 border-cyan-500 items-center">
           <h2 className="text-3xl after:bg-cyan-500 font-semibold tracking-[8px]">
