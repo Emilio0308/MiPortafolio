@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        "Playfair": ['Playfair' , 'ui-sans-serif'],
+        "Playfair": ['Playfair' , 'EB Garamond'],
         "EB Garamond" : ['EB Garamond', 'ui-sans-serif']
       }
     },
