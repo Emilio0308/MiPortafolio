@@ -45,13 +45,13 @@ const About = () => {
               Follow Me
             </span>
             <span>
-              <i className="bx bxl-linkedin-square hover:text-cyan-500"></i>
+              <a href="https://www.linkedin.com/in/emilio-rivas-ruiz-a8857226b/" target="_blank"><i className="bx bxl-linkedin-square hover:text-cyan-500"></i></a>
             </span>
             <span>
-              <i className="bx bxl-instagram hover:text-cyan-500"></i>
+              <a href="https://github.com/Emilio0308" target="_blank"><i className="bx bxl-github hover:text-cyan-500"></i></a>
             </span>
             <span>
-              <i className="bx bxl-github hover:text-cyan-500"></i>
+              <a href="https://www.instagram.com/emilio_e_r/" target="_blank"><i className="bx bxl-instagram hover:text-cyan-500"></i></a>
             </span>
           </div>
         </div>

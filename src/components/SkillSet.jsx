@@ -35,13 +35,18 @@ const SkillSet = () => {
           skills={["Nodejs", "MongoDB", "Phyton", "SQL"]}
         />
       </div>
-      {/* <div className="w-full h-[350px] overflow-hidden relative">
-        <img
-          className="w-full absolute bottom-0"
-          src="/imagenes/skillcenter2.png"
-          alt=""
-        />
-      </div> */}
+      {/* <article className="grid-cols-2">
+        <div className="h-[300px] overflow-hidden">
+          <img
+            className="h-full bottom-0"
+            src="/imagenes/cel2.png"
+            alt=""
+          />
+        </div>
+        <div>
+          
+        </div>
+      </article> */}
     </section>
   );
 };
