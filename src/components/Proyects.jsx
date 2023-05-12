@@ -27,8 +27,8 @@ const Proyects = () => {
       id:3,
       español: "Este es el e-commers de Academlo, no te quedes sin tu prenda favorita.",
       ingles: "This is Academlo's e-commerce, don't miss out on your favorite garment.",
-      img: "/proyectsimg/ecommers.png",
-      link: "https://emili0ecommerce.netlify.app/",
+      img: "/proyectsimg/ecommers2.png",
+      link: "https://ecommersproyect.netlify.app/",
     },
     portfolio : {
       title: "Portfolio",
