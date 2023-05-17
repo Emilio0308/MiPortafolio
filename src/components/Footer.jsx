@@ -31,11 +31,11 @@ const Footer = () => {
             <span>MY SKILLS</span>
           </a>
           <a
-            href="#proyects"
+            href="#Projects"
             className="hover:text-cyan-500 hover:tracking-widest w-full text-center flex gap-3 justify-center"
           >
             <i className="bx bx-code-alt text-xl"></i>
-            <span>PROYECTS</span>
+            <span>PROJECTS</span>
           </a>
           <a
             href="#contact"

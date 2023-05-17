@@ -56,11 +56,11 @@ const Header = () => {
             </a>
             <a
               onClick={handleShowMenu}
-              href="#proyects"
+              href="#Projects"
               className="list-none text-cyan-500 hover:text-gray-900 font-bold hover:tracking-widest
               hover:bg-cyan-500 w-full sm:w-[120px] h-full flex justify-center items-center"
             >
-              My Proyects
+              My Projects
             </a>
             <a
               onClick={handleShowMenu}
