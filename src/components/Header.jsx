@@ -4,7 +4,7 @@ import { changeLanguage } from "../store/slices/language.sile";
 
 const Header = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
-  const language = useSelector( (store)=> store.language)
+  const language = useSelector( ( store )=> store.language)
   const handleShowMenu = () => {
     setIsMenuActive(!isMenuActive);
   };
@@ -28,7 +28,7 @@ const Header = () => {
         >
           <div className={
             `${isMenuActive ? "right-[0%]" : " right-[-80vw]"}
-            absolute bg-gray-950 top-0 w-[80vw] h-[100vh] flex flex-col justify-end sm:flex-row sm:h-full sm:right-0 sm:opacity-100 sm:w-full sm:translate-x-0 text-base transition-[right] duration-700 translate-x-2`
+            absolute bg-gray-950 top-[60px] w-[80vw] h-[calc(100vh-60px)] flex flex-col justify-end sm:flex-row sm:h-full sm:right-0 sm:opacity-100 sm:w-full sm:top-0 text-base transition-[right] duration-700 translate-x-2 sm:translate-x-0`
             }>
             <a
               onClick={handleShowMenu}
@@ -70,15 +70,9 @@ const Header = () => {
             >
               Contact
             </a>
-            <button
-              onClick={handleShowMenu}
-              className="absolute top-5 right-2 sm:opacity-0 sm:invisible"
-            >
-              <i className='bx bx-x text-3xl text-gray-400'></i>
-            </button>
           </div>
           <button onClick={handleShowMenu} className="sm:opacity-0 sm:invisible text-2xl">
-            <i className='bx bx-menu'></i>
+            <i className={`${ isMenuActive ? "bx bx-x " : "bx bx-menu"} hover:text-cyan-500`}></i>
           </button>
         </div>
       </nav>

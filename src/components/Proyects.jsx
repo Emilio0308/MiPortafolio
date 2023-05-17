@@ -11,8 +11,9 @@ const Proyects = () => {
       id:1,
       español: "Bienvenido a la Pokédex donde encontrarás todos los pokémon que buscas en una interfaz interactiva pensada para ti.",
       ingles: "Welcome to the Pokédex where you will find all the Pokémon you are looking for in an interactive interface designed for you.",
-      img: "/proyectsimg/pokedexsm.png",
-      link: "https://erivaspokedex.netlify.app/"
+      img: "/proyectsimg/pokedex.png",
+      link: "https://erivaspokedex.netlify.app/",
+      github : "https://github.com/Emilio0308/pokedex",
     },
     rickymorty : {
       title: "Rick y Morty",
@@ -21,6 +22,7 @@ const Proyects = () => {
       ingles: "Website in React using the popular Rick and Morty API.Find your favorite character in Rick and Morty's crazy dimensions.",
       img: "/proyectsimg/rickymorty.png",
       link:"https://projectrick.netlify.app/",
+      github: "https://github.com/Emilio0308/Rick-y-Morty",
     },
     ecommers : {
       title: "E-commers",
@@ -28,7 +30,8 @@ const Proyects = () => {
       español: "Este es el e-commers de Academlo, no te quedes sin tu prenda favorita.",
       ingles: "This is Academlo's e-commerce, don't miss out on your favorite garment.",
       img: "/proyectsimg/ecommers2.png",
-      link: "https://ecommersproyect.netlify.app/",
+      link: "https://my-shopfy.netlify.app/",
+      github: "https://github.com/Emilio0308/shop",
     },
     portfolio : {
       title: "Portfolio",
@@ -37,8 +40,10 @@ const Proyects = () => {
       ingles: "This is my personal website.",
       img: "/proyectsimg/portfolio.png",
       link: "https://erivas.netlify.app/",
+      github: "https://github.com/Emilio0308/MiPortafolio",
     },
   }
+
   return (
     <section
       id="proyects"

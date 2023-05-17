@@ -51,7 +51,7 @@ const ProyectLauout = ({ proyect, id, setProyectActive }) => {
             </a>
           </span>
           <span>
-            <a href="https://github.com/Emilio0308" target="_blank">
+            <a href={proyect.github} target="_blank">
               <i className="bx bxl-github hover:text-cyan-500"></i>
             </a>
           </span>
@@ -61,19 +61,18 @@ const ProyectLauout = ({ proyect, id, setProyectActive }) => {
         className="w-full grid grid-rows-[3fr,_repeat(3,_1fr)] items-center justify-items-center gap-[2px]
        sm:grid-rows-[2fr,_1fr] sm:grid-cols-[2fr,_1fr] text-base max-h-[calc(100vh-80px)]"
       >
-        <a
-          href={proyect.link}
-          target="_blank"
-          className="w-full h-full bg-[#23252f] flex justify-center items-center cursor-pointer"
-        >
+        <div className="w-full h-full bg-[#23252f] flex justify-center items-center">
           <img
-            className="object-contain w-full h-full max-h-[calc((100vh-80px)*0.5)] sm:max-h-[calc((100vh-80px)*2/3)]"
+            className="object-cover object-left-top w-full max-h-[calc((100vh-80px)*0.5)] sm:max-h-[calc((100vh-80px)*2/3)]"
             src={proyect.img}
             alt=""
           />
-        </a>
-        <h3 className="sm:row-start-2  w-full h-full flex justify-center items-center bg-[#23252f] text-2xl tracking-widest uppercase">
+        </div>
+        <h3 className="sm:row-start-2 relative w-full h-full flex justify-center items-center bg-[#23252f] text-2xl tracking-widest uppercase">
           {proyect.title}
+          <a href={proyect.link} target="_blank">
+            <i className="absolute hover:text-cyan-500 right-1 bottom-2 bx bx-link-external"></i>
+          </a>
         </h3>
         <p className="p-1 w-full h-full flex justify-center items-center bg-[#23252f] sm:p-3">
           {language ? proyect.ingles : proyect.español}

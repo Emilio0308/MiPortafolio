@@ -13,35 +13,35 @@ const Footer = () => {
             href="#home"
             className="hover:text-cyan-500 hover:tracking-widest w-full text-center flex gap-3 justify-center"
           >
-            <i class="bx bx-home-alt-2 text-xl"></i>
+            <i className="bx bx-home-alt-2 text-xl"></i>
             <span>HOME</span>
           </a>
           <a
             href="#about"
             className="hover:text-cyan-500 hover:tracking-widest w-full text-center flex gap-3 justify-center"
           >
-            <i class="bx bxs-wink-tongue text-xl"></i>
+            <i className="bx bxs-wink-tongue text-xl"></i>
             <span>ABOUT - ME</span>
           </a>
           <a
             href="#skills"
             className="hover:text-cyan-500 hover:tracking-widest w-full text-center flex gap-3 justify-center"
           >
-            <i class="bx bx-briefcase text-xl"></i>
+            <i className="bx bx-briefcase text-xl"></i>
             <span>MY SKILLS</span>
           </a>
           <a
             href="#proyects"
             className="hover:text-cyan-500 hover:tracking-widest w-full text-center flex gap-3 justify-center"
           >
-            <i class="bx bx-code-alt text-xl"></i>
+            <i className="bx bx-code-alt text-xl"></i>
             <span>PROYECTS</span>
           </a>
           <a
             href="#contact"
             className="hover:text-cyan-500 hover:tracking-widest w-full text-center flex gap-3 justify-center"
           >
-            <i class="bx bx-mail-send text-xl"></i>
+            <i className="bx bx-mail-send text-xl"></i>
             <span>CONTACT</span>
           </a>
         </article>
