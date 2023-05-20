@@ -28,7 +28,7 @@ const Header = () => {
         >
           <div className={
             `${isMenuActive ? "right-[0%]" : " right-[-80vw]"}
-            absolute bg-gray-950 top-[60px] w-[80vw] h-[calc(100vh-60px)] flex flex-col justify-end sm:flex-row sm:h-full sm:right-0 sm:opacity-100 sm:w-full sm:top-0 text-base transition-[right] duration-700 translate-x-2 sm:translate-x-0`
+            absolute bg-gray-950 top-[60px] w-[80vw] h-[calc(100vh-60px)] flex flex-col justify-end sm:flex-row sm:h-full sm:right-0 sm:opacity-100 sm:w-full sm:top-0 transition-[right] duration-700 translate-x-2 sm:translate-x-0 gap-2`
             }>
             <a
               onClick={handleShowMenu}
@@ -58,7 +58,7 @@ const Header = () => {
               onClick={handleShowMenu}
               href="#Projects"
               className="list-none text-cyan-500 hover:text-gray-900 font-bold hover:tracking-widest
-              hover:bg-cyan-500 w-full sm:w-[120px] h-full flex justify-center items-center"
+              hover:bg-cyan-500 w-full sm:w-[130px] h-full flex justify-center items-center"
             >
               My Projects
             </a>

@@ -8,7 +8,8 @@ export default {
     extend: {
       fontFamily:{
         "Playfair": ['Playfair' , 'EB Garamond'],
-        "EB Garamond" : ['EB Garamond', 'ui-sans-serif']
+        "EB Garamond" : ['EB Garamond', 'ui-sans-serif'],
+        "Courier" : [ 'Courier Prime']
       }
     },
   },

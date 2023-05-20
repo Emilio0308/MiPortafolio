@@ -4,7 +4,8 @@
 
 html{
     scroll-behavior: smooth;
-    font-family: 'EB Garamond', serif;
+    /* font-family: 'EB Garamond', serif; */
+    font-family: 'Courier Prime', monospace;
 }
 .imgcontainer {
     aspect-ratio: 1/1;
