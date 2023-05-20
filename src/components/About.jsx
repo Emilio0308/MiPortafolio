@@ -21,7 +21,7 @@ const About = () => {
               </span>
               <span className="text-cyan-500 text-3xl">{`>`}</span>
             </h4>
-            <p className="overflow-hidden self-start text-lg sm:text-base md:text-lg font-mono">
+            <p className="overflow-hidden self-start text-lg sm:text-base md:text-lg font-monospace">
               {language
                 ? "I am a passionate frontend developer with a love for technology and programming. I enjoy working collaboratively and effectively communicating ideas. I recently graduated from the Academlo bootcamp and am seeking my first employment opportunity in the development field. I am excited for the opportunity to join a software development team and continue learning and growing in this exciting field. Please don't hesitate to contact me. Thank you for your consideration!"
                 : "Soy un desarrollador frontend apasionado por la tecnología y la programación, Me gusta trabajar en equipo y comunicar ideas de manera efectiva, me gradué recientemente del bootcamp de Academlo y busco mi primer empleo en el área de desarrollo. Estoy emocionado por la oportunidad de unirme a un equipo de desarrollo de software y seguir aprendiendo y creciendo en este emocionante campo. No dudes en ponerte en contacto conmigo. ¡Gracias por su consideración!"}

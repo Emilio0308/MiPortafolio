@@ -9,7 +9,8 @@ export default {
       fontFamily:{
         "Playfair": ['Playfair' , 'EB Garamond'],
         "EB Garamond" : ['EB Garamond', 'ui-sans-serif'],
-        "Courier" : [ 'Courier Prime']
+        "Courier" : [ 'Courier Prime'] ,
+        "monospace" : ['monospace']
       }
     },
   },

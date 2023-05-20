@@ -66,7 +66,7 @@ const Home = () => {
               language ? "I'm a frontend developer":"soy un desarrollador frontend."
             }
         </h1>
-        <p className="text-xl">
+        <p className="text-lg font-monospace">
           { language ?
           "I’m probably the most passionate developer you will ever get to work with. If you have a great project that needs some amazing skills, I'm what you're looking for."
           :"Probablemente sea el desarrollador más apasionado con el que trabajarás. Si tienes un gran proyecto que requiere habilidades increíbles, soy lo que estás buscando."
