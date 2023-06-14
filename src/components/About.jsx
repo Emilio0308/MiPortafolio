@@ -31,11 +31,11 @@ const About = () => {
           <div className="relative w-full aspect-square self-end grid">
             <div
               className="w-[85%] aspect-square imgcontainer absolute after:bg-cyan-500 before:bg-cyan-500
-          sm:translate-y-[25.8%] bottom-0 z-20"
+          sm:translate-y-[25.8%] bottom-0 z-20 bg-[#23252f] pt-20"
             >
               <img
-                className="w-full h-full object-cover"
-                src="/imagenes/profile.png"
+                className="w-full h-full object-contain"
+                src="/imagenes/profile2.png"
                 alt=""
               />
             </div>
