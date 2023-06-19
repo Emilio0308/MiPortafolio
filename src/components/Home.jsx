@@ -63,7 +63,7 @@ const Home = () => {
             }
           </strong>
             {
-              language ? "I'm a frontend developer":"soy un desarrollador frontend."
+              language ? "I'm a full stack developer":"soy un desarrollador full stack."
             }
         </h1>
         <p className="text-lg font-monospace">
