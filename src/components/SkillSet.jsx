@@ -35,7 +35,7 @@ const SkillSet = () => {
         />
         <SkillCard
           type={"BackEnd"}
-          skills={["Nodejs", "MongoDB", "Phyton", "SQL"]}
+          skills={["Nodejs", "PostgresSQL", "Express", "Sequelize"]}
         />
       </div>
 
