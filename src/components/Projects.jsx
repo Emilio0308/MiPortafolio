@@ -5,6 +5,7 @@ const Projects = () => {
 
   const [proyectActive, setProyectActive] = useState(1)
 
+
   const proyects = {
     pokedex : {
       title: "Pokedex",
@@ -16,13 +17,13 @@ const Projects = () => {
       github : "https://github.com/Emilio0308/pokedex",
     },
     rickymorty : {
-      title: "Rick y Morty",
+      title: "Warframe Page",
       id:2,
-      español: "Sitio web en React usando la popular API de Rick and Morty. Encuentra a tu personaje favorito en las dimensiones locas de Rick y Morty.",
-      ingles: "Website in React using the popular Rick and Morty API.Find your favorite character in Rick and Morty's crazy dimensions.",
-      img: "/proyectsimg/rickymorty.png",
-      link:"https://projectrick.netlify.app/",
-      github: "https://github.com/Emilio0308/Rick-y-Morty",
+      español: "Sitio web desarrollado en react de uno de mis juegos favoritos warframe",
+      ingles: "Website developed in React showcasing one of my favorite games, Warframe.",
+      img: "/proyectsimg/warframe-page.png",
+      link:"https://warframe-page.netlify.app/",
+      github: "https://github.com/Emilio0308/warframepage",
     },
     ecommers : {
       title: "E-commers",
@@ -60,7 +61,6 @@ const Projects = () => {
         <ProjectLauout project={proyects.ecommers} id={proyectActive} setProyectActive={setProyectActive} />
 
         <ProjectLauout project={proyects.portfolio} id={proyectActive} setProyectActive={setProyectActive} />
-
 
       </section>
     </section>

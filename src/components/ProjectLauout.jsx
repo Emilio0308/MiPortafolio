@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 const ProjectLauout = ({ project, id, setProyectActive }) => {
   const language = useSelector((store) => store.language);
 
+
   const handleChangeProject = (num) => {
     let newValue = id + eval(num);
     if (newValue == 0) {
@@ -27,7 +28,7 @@ const ProjectLauout = ({ project, id, setProyectActive }) => {
     <section
       className={`${project.title}-${
         project.id
-      } grid grid-rows-[auto,_1fr] absolute w-full h-screen gap-[2px] opacity-100 shadow-2xl shadow-black/60
+      } grid grid-rows-[auto,_1fr] absolute w-full gap-[2px] opacity-100 shadow-2xl shadow-black/60
       ${
         id == project.id
           ? "right-0 visible transition-all duration-1000 z-10"
@@ -39,7 +40,7 @@ const ProjectLauout = ({ project, id, setProyectActive }) => {
         <div className="flex justify-around items-center text-3xl bg-[#23252f]">
           <span>
             <a
-              href="https://www.linkedin.com/in/emilio-rivas-ruiz-a8857226b/"
+              href="https://www.linkedin.com/in/emilio-rivas-ruiz"
               target="_blank"
             >
               <i className="bx bxl-linkedin-square hover:text-cyan-500"></i>
@@ -59,13 +60,13 @@ const ProjectLauout = ({ project, id, setProyectActive }) => {
       </article>
       <article
         className="w-full grid grid-rows-[3fr,_repeat(3,_1fr)] items-center justify-items-center gap-[2px]
-       sm:grid-rows-[2fr,_1fr] sm:grid-cols-[2fr,_1fr] text-base max-h-[calc(100vh-80px)]"
+       sm:grid-rows-[2fr,_1fr] sm:grid-cols-[2fr,_1fr] text-base"
       >
         <div className="w-full h-full bg-[#23252f] flex justify-center items-center">
           <img
             className="object-cover object-left-top w-full max-h-[calc((100vh-80px)*0.5)] sm:max-h-[calc((100vh-80px)*2/3)]"
             src={project.img}
-            alt=""
+            alt={project.img}
           />
         </div>
         <h3 className="sm:row-start-2 relative w-full h-full flex justify-center items-center bg-[#23252f] text-2xl tracking-widest uppercase">
