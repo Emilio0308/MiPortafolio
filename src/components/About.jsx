@@ -23,20 +23,20 @@ const About = () => {
             </h4>
             <p className="overflow-hidden self-start text-lg sm:text-base md:text-lg font-monospace">
               {language
-                ? "I am a passionate frontend developer with a love for technology and programming. I enjoy working collaboratively and effectively communicating ideas. I recently graduated from the Academlo bootcamp and am seeking my first employment opportunity in the development field. I am excited for the opportunity to join a software development team and continue learning and growing in this exciting field. Please don't hesitate to contact me. Thank you for your consideration!"
-                : "Soy un desarrollador frontend apasionado por la tecnología y la programación, Me gusta trabajar en equipo y comunicar ideas de manera efectiva, me gradué recientemente del bootcamp de Academlo y busco mi primer empleo en el área de desarrollo. Estoy emocionado por la oportunidad de unirme a un equipo de desarrollo de software y seguir aprendiendo y creciendo en este emocionante campo. No dudes en ponerte en contacto conmigo. ¡Gracias por su consideración!"}
+                ? "I am a passionate frontend developer with a love for technology and programming. I enjoy working collaboratively and effectively communicating ideas. I recently graduated from the Academlo bootcamp and am seeking my first employment opportunity in the development field. I am excited for the opportunity to join a software development team and continue learning and growing in this exciting field. Please don't hesitate to contact me."
+                : "Soy un desarrollador frontend apasionado por la tecnología y la programación, Me gusta trabajar en equipo y comunicar ideas de manera efectiva, me gradué recientemente del bootcamp de Academlo y busco mi primer empleo en el área de desarrollo. Estoy emocionado por la oportunidad de unirme a un equipo de desarrollo de software y seguir aprendiendo y creciendo en este emocionante campo. No dudes en ponerte en contacto conmigo."}
             </p>
           </div>
 
           <div className="relative w-full aspect-square self-end grid">
             <div
               className="w-[85%] aspect-square imgcontainer absolute after:bg-cyan-500 before:bg-cyan-500
-          sm:translate-y-[25.8%] bottom-0 z-20 bg-[#23252f] pt-20"
+          sm:translate-y-[25.8%] bottom-0 z-20 bg-[#23252f] pt-3"
             >
               <img
-                className="w-full h-full object-contain"
+                className="h-full mx-auto object-cover"
                 src="/imagenes/profile2.png"
-                alt=""
+                alt="Emilio Rivas"
               />
             </div>
             <span className="block w-[31%] h-[4px] bg-cyan-500 absolute bottom-[21.25%] right-[0] sm:bottom-[-2px] sm:top-auto"></span>

@@ -18,10 +18,10 @@ const Header = () => {
         <div className="w-[60px] h-[60px]">
           <img className="w-full h-full object-cover" src="/logo_1.svg" alt="" />
         </div>
-        <button onClick={handleChangeLenguage} className="text-sm text-cyan-500">
-            <span className={`${language? "text-cyan-500" : "text-white text-xs"}`}>En</span>
+        <button onClick={handleChangeLenguage} className="text-xl text-cyan-500">
+            <span className={`${language? "text-cyan-500" : "text-white"}`}>En</span>
             /
-            <span className={`${language? "text-white text-xs" : "text-cyan-500"}`}>Es</span>
+            <span className={`${language? "text-white" : "text-cyan-500"}`}>Es</span>
         </button>
         <div
           className= "w-full relative flex justify-end items-center"
