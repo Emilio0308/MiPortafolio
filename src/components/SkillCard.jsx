@@ -22,7 +22,7 @@ const SkillCard = ({ type, skills }) => {
                 className="w-[30px] aspect-square object-contain justify-self-end"
                 src={`/skillimg/${skill}.png`}
                 onError={(e) => (e.target.style.display = "none")}
-                alt=""
+                alt={skill}
               />
             </div>
           ))}

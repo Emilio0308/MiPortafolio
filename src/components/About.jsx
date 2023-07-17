@@ -23,8 +23,8 @@ const About = () => {
             </h4>
             <p className="overflow-hidden self-start text-lg sm:text-base md:text-lg font-monospace">
               {language
-                ? "I am a passionate frontend developer with a love for technology and programming. I enjoy working collaboratively and effectively communicating ideas. I recently graduated from the Academlo bootcamp and am seeking my first employment opportunity in the development field. I am excited for the opportunity to join a software development team and continue learning and growing in this exciting field. Please don't hesitate to contact me."
-                : "Soy un desarrollador frontend apasionado por la tecnología y la programación, Me gusta trabajar en equipo y comunicar ideas de manera efectiva, me gradué recientemente del bootcamp de Academlo y busco mi primer empleo en el área de desarrollo. Estoy emocionado por la oportunidad de unirme a un equipo de desarrollo de software y seguir aprendiendo y creciendo en este emocionante campo. No dudes en ponerte en contacto conmigo."}
+                ? "I am a Full Stack developer with experience in web development using React JS and Node JS. I focus on creating digital solutions that provide the best user experience. I enjoy working in teams, contributing ideas and solutions, and maintaining clean code. I am always eager to learn and improve my performance as a programmer.Feel free to contact me!!!"
+                : "Soy un desarrollador Full Stack con experiencia en desarrollo web utilizando React JS y Node JS. Me enfoco en crear soluciones digitales que brinden la mejor experiencia al usuario. Me gusta trabajar en equipo, aportando ideas y soluciones, y manteniendo un código limpio. Estoy siempre dispuesto a aprender para mejorar mi desempeño como programador.Contactame!!!"}
             </p>
           </div>
 

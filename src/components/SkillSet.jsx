@@ -1,5 +1,6 @@
 import React from "react";
 import SkillCard from "./SkillCard";
+// import TechnologyCard from "./TechnologyCard";
 
 const SkillSet = () => {
   return (
@@ -38,6 +39,23 @@ const SkillSet = () => {
           skills={["Nodejs", "PostgresSQL", "Express", "Sequelize"]}
         />
       </div>
+
+      {/* <TechnologyCard
+        skills={[
+          "Html",
+          "CSS",
+          "Tailwind",
+          "Javascript",
+          "React",
+          "Redux",
+          "Vite",
+          "Nodejs",
+          "PostgresSQL",
+          "Express",
+          "Sequelize",
+        ]}
+        title={"My Frontend Skills"}
+      /> */}
 
       <div className="bg-[url(/imagenes/phone.png)] w-full right-0 left-0 top-0 bottom-0 opacity-5 absolute z-0"></div>
     </section>

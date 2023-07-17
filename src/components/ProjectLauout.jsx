@@ -4,7 +4,6 @@ import { useSelector } from "react-redux";
 const ProjectLauout = ({ project, id, setProyectActive }) => {
   const language = useSelector((store) => store.language);
 
-
   const handleChangeProject = (num) => {
     let newValue = id + eval(num);
     if (newValue == 0) {
@@ -36,7 +35,9 @@ const ProjectLauout = ({ project, id, setProyectActive }) => {
       } ${projectPosition()}`}
     >
       <article className="grid w-full h-[80px] grid-cols-[2fr,_1fr] gap-[2px]">
-        <div className="bg-[#23252f]"></div>
+        <div className="bg-[#23252f] flex justify-center items-center">
+          {project.technologies}
+        </div>
         <div className="flex justify-around items-center text-3xl bg-[#23252f]">
           <span>
             <a
@@ -79,17 +80,17 @@ const ProjectLauout = ({ project, id, setProyectActive }) => {
           {language ? project.ingles : project.español}
         </p>
         <div className="w-full h-full grid grid-cols-2 text-5xl bg-[#23252f]">
-          <button className="hover:bg-[#282C33] hover:text-cyan-500">
-            <i
-              onClick={() => handleChangeProject(-1)}
-              className="bx bx-left-arrow-alt w-full h-full flex justify-center items-center"
-            ></i>
+          <button
+            onClick={() => handleChangeProject(-1)}
+            className="hover:bg-[#282C33] hover:text-cyan-500"
+          >
+            <i className="bx bx-left-arrow-alt w-full h-full flex justify-center items-center"></i>
           </button>
-          <button className="hover:bg-[#282C33] hover:text-cyan-500 ">
-            <i
-              onClick={() => handleChangeProject(1)}
-              className="bx bx-right-arrow-alt w-full h-full flex justify-center items-center"
-            ></i>
+          <button
+            onClick={() => handleChangeProject(1)}
+            className="hover:bg-[#282C33] hover:text-cyan-500 "
+          >
+            <i className="bx bx-right-arrow-alt w-full h-full flex justify-center items-center"></i>
           </button>
         </div>
       </article>
