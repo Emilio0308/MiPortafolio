@@ -70,14 +70,14 @@ const Home = () => {
             : "Si tienes un gran proyecto que requiere habilidades increíbles, contactame me!!!"}
         </p>
         <a
-          href="/cvs/Emilio Rivas Ruiz.pdf"
+          href={language ? "/cvs/Emilio Rivas Ruiz cv.pdf" : "/cvs/Emilio Rivas Ruiz.pdf"}
           download="Emilio Rivas Ruiz.pdf"
           target="_blank"
           type="button"
           className="cursor-pointer shadow-sm shadow-cyan-600 mt-5 font-semibold tracking-wider text-xl
           bg-black hover:shadow-xl max-w-[220px] p-3 mx-auto hover:shadow-cyan-600 transition-all duration-500"
         >
-          Download My Cv
+          {language ? "Download My Cv" : "Descarga mi Cv"}
         </a>
       </article>
       <div className="flex justify-center w-full py-3 items-center relative sm:col-span-2 md:col-span-1  max-w-[700px] mx-auto">
