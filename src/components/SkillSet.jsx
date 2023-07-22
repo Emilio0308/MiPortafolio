@@ -1,15 +1,17 @@
 import React from "react";
 import SkillCard from "./SkillCard";
+import { useSelector } from "react-redux";
 // import TechnologyCard from "./TechnologyCard";
 
 const SkillSet = () => {
+  const language = useSelector( Storage => Storage.language )
   return (
     <section
       id="skills"
       className="w-full max-w-[1200px] mx-auto flex flex-col gap-8 p-3 pt-[60px] mt-[80px] relative"
     >
       <h2 className="text-3xl after:bg-cyan-500 font-semibold tracking-[8px]">
-        <span className="text-cyan-500 text-4xl">#</span>My Skills
+        <span className="text-cyan-500 text-4xl">#</span>{language ? "My Skills" : "Mis Habilidades"}
       </h2>
 
       <div className="w-full grid auto-rows-auto grid-cols-[repeat(auto-fit,_minmax(260px,_1fr))] gap-5 mt-[40px] mb-[80px] z-10">

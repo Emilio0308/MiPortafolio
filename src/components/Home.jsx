@@ -3,7 +3,7 @@ import "./Home.css";
 import { useSelector } from "react-redux";
 
 const Home = () => {
-  const language = useSelector( (store) => store.language)
+  const language = useSelector((store) => store.language);
   return (
     <section
       id="home"
@@ -55,45 +55,52 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <article className="flex flex-col justify-center w-[80%] max-w-[360px] p-5 mix-blend-difference absolute bottom-[43%] sm:bottom-0 sm:w-[50%] sm:max-w-none md:relative md:p-0 md:w-[100%]">
-        <h1 className="font-bold text-4xl md:text-4xl pb-4">
+      <article className="flex flex-col justify-center w-[100%] max-w-[360px] p-3  absolute bottom-[43%] sm:bottom-0 sm:w-[50%] sm:max-w-none md:relative md:p-0 md:w-[100%]">
+        <h1 className="font-bold text-4xl md:text-4xl pb-4 mix-blend-difference">
           <strong className="text-cyan-500">
-            {
-              language ? "Hi ":"Hola "
-            }
+            {language ? "Hi " : "Hola "}
           </strong>
-            {
-              language ? "I'm a full stack developer":"soy un desarrollador full stack."
-            }
+          {language
+            ? "I'm a full stack developer."
+            : "soy un desarrollador full stack"}
         </h1>
-        <p className="text-lg font-monospace">
-          { language ?
-          "I’m probably the most passionate developer you will ever get to work with. If you have a great project that needs some amazing skills, I'm what you're looking for."
-          :"Probablemente sea el desarrollador más apasionado con el que trabajarás. Si tienes un gran proyecto que requiere habilidades increíbles, soy lo que estás buscando."
-        }
+        <p className="text-lg font-monospace z-50 mix-blend-difference">
+          {language
+            ? "If you have a great project that needs some amazing skills, contact me!!!"
+            : "Si tienes un gran proyecto que requiere habilidades increíbles, contactame me!!!"}
         </p>
+        <a
+          href="/cvs/Emilio Rivas Ruiz.pdf"
+          download="Emilio Rivas Ruiz.pdf"
+          target="_blank"
+          type="button"
+          className="cursor-pointer shadow-sm shadow-cyan-600 mt-5 font-semibold tracking-wider text-xl
+          bg-black hover:shadow-xl max-w-[220px] p-3 mx-auto hover:shadow-cyan-600 transition-all duration-500"
+        >
+          Download My Cv
+        </a>
       </article>
       <div className="flex justify-center w-full py-3 items-center relative sm:col-span-2 md:col-span-1  max-w-[700px] mx-auto">
         <div className="w-[100%] relative">
           <img
             className="object-cover w-full"
             src="/imagenes/robothome.png"
-            alt=""
+            alt="robothome"
           />
           <img
-            className="absolute w-[25%] -left-10 top-5 "
+            className="absolute w-[25%] -left-10 top-9"
             src="/imagenes/elipse1.png"
-            alt=""
+            alt="elipse1"
           />
           <img
             className="absolute w-[40%] right-2 top-8"
             src="/imagenes/elipse2.png"
-            alt=""
+            alt="elipse2"
           />
           <img
-            className="absolute w-[20%] bottom-[30%] left-11"
+            className="absolute w-[20%] bottom-[18%] left-11"
             src="/imagenes/elipse3.png"
-            alt=""
+            alt="elipse3"
           />
         </div>
       </div>

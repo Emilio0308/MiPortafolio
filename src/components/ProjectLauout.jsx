@@ -48,8 +48,8 @@ const ProjectLauout = ({ project, id, setProyectActive }) => {
             </a>
           </span>
           <span>
-            <a href="https://www.instagram.com/emilio_e_r/" target="_blank">
-              <i className="bx bxl-instagram hover:text-cyan-500"></i>
+            <a href={project.link} target="_blank">
+              <i className="hover:text-cyan-500 bx bx-link-external"></i>
             </a>
           </span>
           <span>
@@ -72,9 +72,6 @@ const ProjectLauout = ({ project, id, setProyectActive }) => {
         </div>
         <h3 className="sm:row-start-2 relative w-full h-full flex justify-center items-center bg-[#23252f] text-2xl tracking-widest uppercase">
           {project.title}
-          <a href={project.link} target="_blank">
-            <i className="absolute hover:text-cyan-500 right-1 bottom-2 bx bx-link-external"></i>
-          </a>
         </h3>
         <p className="p-1 w-full h-full flex justify-center items-center bg-[#23252f] sm:p-3">
           {language ? project.ingles : project.español}

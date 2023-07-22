@@ -56,11 +56,6 @@ const Footer = () => {
             </a>
           </span>
           <span className="flex text-4xl sm:text-3xl">
-            <a href="https://www.instagram.com/emilio_e_r/" target="_blank">
-              <i className="bx bxl-instagram hover:text-cyan-500"></i>
-            </a>
-          </span>
-          <span className="flex text-4xl sm:text-3xl">
             <a href="https://github.com/Emilio0308" target="_blank">
               <i className="bx bxl-github hover:text-cyan-500"></i>
             </a>

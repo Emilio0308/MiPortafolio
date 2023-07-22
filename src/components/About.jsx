@@ -10,7 +10,7 @@ const About = () => {
     >
       <section className="max-w-[1200px] mx-auto p-3">
         <h2 className="text-3xl after:bg-cyan-500 font-semibold tracking-[8px]">
-          <span className="text-cyan-500 text-4xl">#</span>About-Me
+          <span className="text-cyan-500 text-4xl">#</span>{language ? "About-Me" : "Acerca de"}
         </h2>
         <article className="grid grid-rows-[auto,1fr] gap-5 sm:grid-cols-2 sm:grid-rows-[1fr,0] sm:gap-y-0 sm:h-auto">
           <div className="grid grid-rows-[repeat(2,_auto)] min-h-[450px] sm:border-b-4 border-cyan-500 items-center">
@@ -55,11 +55,6 @@ const About = () => {
               <span>
                 <a href="https://github.com/Emilio0308" target="_blank">
                   <i className="bx bxl-github hover:text-cyan-500"></i>
-                </a>
-              </span>
-              <span>
-                <a href="https://www.instagram.com/emilio_e_r/" target="_blank">
-                  <i className="bx bxl-instagram hover:text-cyan-500"></i>
                 </a>
               </span>
             </div>

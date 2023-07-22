@@ -22,7 +22,7 @@ const Contact = () => {
       className="w-full max-w-[1200px] p-3 m-auto  grid grid-rows-[auto,_1fr] gap-5 pt-[60px]"
     >
       <h2 className="text-3xl after:bg-cyan-500 font-semibold tracking-[8px]">
-        <span className="text-cyan-500 text-4xl">#</span>Contact
+        <span className="text-cyan-500 text-4xl">#</span>{language ? "Contact" : "Contactame"}
       </h2>
       <section className="grid grid-rows-[auto] auto-rows-auto gap-3 sm:grid-rows-1 sm:grid-cols-2 bg-[url(/contact/triangulo.svg)] bg-no-repeat 
       bg-[length:auto_70%] sm:bg-center sm:bg-[length:auto_90%]">
@@ -65,8 +65,8 @@ const Contact = () => {
           <div className="self-center max-w-[300px] w-full mx-auto">
             {
               language?
-               "Do you have any questions or want to know more about my work? Contact me and let's chat!"
-              :"¿Tienes alguna pregunta o quieres saber más sobre mi trabajo?¡Contáctame y hablemos!"
+               <p>Do you have any questions or want to know more about my work? <strong className="block text-cyan-500">Contact me and let's chat!</strong></p>
+              :<p>¿Tienes alguna pregunta o quieres saber más sobre mi trabajo?<strong className="block text-cyan-500">¡Contáctame y hablemos!</strong></p>
             }
           </div>
           <div className="h-full w-full max-h-[300px]">
