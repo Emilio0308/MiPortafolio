@@ -35,7 +35,7 @@ const ProjectLauout = ({ project, id, setProyectActive }) => {
       } ${projectPosition()}`}
     >
       <article className="grid w-full h-[80px] grid-cols-[2fr,_1fr] gap-[2px]">
-        <div className="bg-[#23252f] flex justify-center items-center">
+        <div className="bg-[#23252f] flex justify-center items-center text-sm sm:text-base">
           {project.technologies}
         </div>
         <div className="flex justify-around items-center text-3xl bg-[#23252f]">
@@ -61,7 +61,7 @@ const ProjectLauout = ({ project, id, setProyectActive }) => {
       </article>
       <article
         className="w-full grid grid-rows-[3fr,_repeat(3,_1fr)] items-center justify-items-center gap-[2px]
-       sm:grid-rows-[2fr,_1fr] sm:grid-cols-[2fr,_1fr] text-base"
+       sm:grid-rows-[2fr,_1fr] sm:grid-cols-[2fr,_1fr] text-base h-[calc(100vh-80px)]"
       >
         <div className="w-full h-full bg-[#23252f] flex justify-center items-center">
           <img
@@ -70,10 +70,10 @@ const ProjectLauout = ({ project, id, setProyectActive }) => {
             alt={project.img}
           />
         </div>
-        <h3 className="sm:row-start-2 relative w-full h-full flex justify-center items-center bg-[#23252f] text-2xl tracking-widest uppercase">
+        <h3 className="sm:row-start-2 relative w-full h-full flex justify-center items-center bg-[#23252f] sm:text-2xl tracking-widest uppercase text-sm">
           {project.title}
         </h3>
-        <p className="p-1 w-full h-full flex justify-center items-center bg-[#23252f] sm:p-3">
+        <p className="p-1 w-full h-full flex justify-center items-center bg-[#23252f] sm:p-3 text-sm sm:text-base">
           {language ? project.ingles : project.español}
         </p>
         <div className="w-full h-full grid grid-cols-2 text-5xl bg-[#23252f]">

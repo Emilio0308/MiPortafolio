@@ -64,7 +64,7 @@ const Home = () => {
             ? "I'm a full stack developer."
             : "soy un desarrollador full stack"}
         </h1>
-        <p className="text-lg font-monospace z-50 mix-blend-difference">
+        <p className="text-lg font-monospace mix-blend-difference">
           {language
             ? "If you have a great project that needs some amazing skills, contact me!!!"
             : "Si tienes un gran proyecto que requiere habilidades increíbles, contactame me!!!"}

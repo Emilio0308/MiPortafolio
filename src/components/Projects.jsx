@@ -17,7 +17,7 @@ const Projects = () => {
       <h2 className="text-3xl after:bg-cyan-500 font-semibold tracking-[8px]">
         <span className="text-cyan-500 text-4xl">#</span>{language ? "My Projects" : "Mis Proyectos"}
       </h2>
-      <section className="h-full flex flex-col min-h-screen relative">
+      <section className="h-full flex flex-col min-h-screen relative overflow-hidden">
         <ProjectLauout project={projects.pokedex} id={proyectActive} setProyectActive={setProyectActive} />
 
         <ProjectLauout project={projects.warframePage} id={proyectActive} setProyectActive={setProyectActive} />

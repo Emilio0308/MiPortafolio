@@ -4,9 +4,9 @@ const SkillCard = ({ type, skills }) => {
   // bg-[#e32053]
   return (
     <article className="grid grid-rows-[auto,_1fr] gap-14 p-4 rounded-xl bg-[#23252f] min-h-[340px] shadow-md shadow-black">
-      <h3 className="text-xl place-self-center">
+      <h3 className="text-lg place-self-center flex justify-center items-center">
         <span className="text-cyan-500 text-3xl">{`<`}</span>
-        <span> My {type} Skills </span>
+        <span className="w-full text-center"> My {type} Skills </span>
         <span className="text-cyan-500 text-3xl">{`>`}</span>
       </h3>
       <div className="w-full">
